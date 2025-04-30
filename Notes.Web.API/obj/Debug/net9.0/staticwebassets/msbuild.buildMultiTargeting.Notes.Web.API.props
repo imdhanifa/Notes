@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Notes.Web.API.props" />
-</Project>
