@@ -4,7 +4,7 @@
     {
         public static NoteDto ToDto(this Note note) => new NoteDto
         {
-            NoteId = note.NoteId,
+            Id = note.Id,
             Title = note.Title,
             Content = note.Content,
             CreatedAt = note.CreatedAt

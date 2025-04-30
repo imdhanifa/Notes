@@ -16,7 +16,7 @@ namespace Notes.Infrastructure.Services
             var note = await _noteRepository.GetByIdAsync(id);
             return note == null ? new NoteDto() : new NoteDto
             {
-                NoteId = note.NoteId,
+                Id = note.Id,
                 Title = note.Title,
                 Content = note.Content
             };
@@ -27,7 +27,7 @@ namespace Notes.Infrastructure.Services
             var notes = await _noteRepository.GetAllAsync();
             return notes.Select(n => new NoteDto
             {
-                NoteId = n.NoteId,
+                Id = n.Id,
                 Title = n.Title,
                 Content = n.Content
             }).ToList();
@@ -37,7 +37,7 @@ namespace Notes.Infrastructure.Services
         {
             var note = new Note
             {
-                NoteId = Guid.NewGuid(),
+                Id = Guid.NewGuid(),
                 Title = dto.Title,
                 Content = dto.Content,
                 CreatedAt = DateTime.UtcNow
@@ -47,7 +47,7 @@ namespace Notes.Infrastructure.Services
 
             return new NoteDto
             {
-                NoteId = note.NoteId,
+                Id = note.Id,
                 Title = note.Title,
                 Content = note.Content
             };
@@ -55,7 +55,7 @@ namespace Notes.Infrastructure.Services
 
         public async Task<NoteDto?> UpdateAsync(UpdateNoteDto dto)
         {
-            var note = await _noteRepository.GetByIdAsync(dto.NoteId);
+            var note = await _noteRepository.GetByIdAsync(dto.Id);
             if (note == null) return null;
 
             note.Title = dto.Title;
@@ -65,7 +65,7 @@ namespace Notes.Infrastructure.Services
 
             return new NoteDto
             {
-                NoteId = note.NoteId,
+                Id = note.Id,
                 Title = note.Title,
                 Content = note.Content
             };

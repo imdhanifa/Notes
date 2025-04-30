@@ -1,6 +1,8 @@
-﻿namespace Notes.Infrastructure.Repositories
+﻿using Notes.Domain.Common;
+
+namespace Notes.Infrastructure.Repositories
 {
-    public class GenericRepository<T> : IGenericRepository<T> where T : Note
+    public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     {
         private readonly AppDbContext _context;
         private readonly DbSet<T> _dbSet;
@@ -13,7 +15,7 @@
 
         public async Task<T?> GetByIdAsync(Guid id)
         {
-            return await _dbSet.FirstOrDefaultAsync(x => x.NoteId == id && !x.IsDeleted);
+            return await _dbSet.FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
         }
 
         public async Task<IEnumerable<T>> GetAllAsync()

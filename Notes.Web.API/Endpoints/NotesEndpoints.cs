@@ -7,7 +7,7 @@
             app.MapPost("/api/notes", async (CreateNoteCommand command, IMediator mediator) =>
             {
                 var result = await mediator.Send(command);
-                return Results.Created($"/api/notes/{result.NoteId}", result);
+                return Results.Created($"/api/notes/{result.Id}", result);
             });
 
             app.MapGet("/api/notes", async (IMediator mediator) =>
