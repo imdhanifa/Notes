@@ -1,6 +1,4 @@
-﻿using Notes.Web.API.Domain.Entities;
-
-namespace Notes.Infrastructure.Services
+﻿namespace Notes.Infrastructure.Services
 {
     public class NoteService : INoteService
     {
