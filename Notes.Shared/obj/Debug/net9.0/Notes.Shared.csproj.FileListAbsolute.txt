@@ -1,0 +1,12 @@
+F:\Learn\Notes.Shared\bin\Debug\net9.0\Notes.Shared.deps.json
+F:\Learn\Notes.Shared\bin\Debug\net9.0\Notes.Shared.dll
+F:\Learn\Notes.Shared\bin\Debug\net9.0\Notes.Shared.pdb
+F:\Learn\Notes.Shared\obj\Debug\net9.0\Notes.Shared.csproj.AssemblyReference.cache
+F:\Learn\Notes.Shared\obj\Debug\net9.0\Notes.Shared.GeneratedMSBuildEditorConfig.editorconfig
+F:\Learn\Notes.Shared\obj\Debug\net9.0\Notes.Shared.AssemblyInfoInputs.cache
+F:\Learn\Notes.Shared\obj\Debug\net9.0\Notes.Shared.AssemblyInfo.cs
+F:\Learn\Notes.Shared\obj\Debug\net9.0\Notes.Shared.csproj.CoreCompileInputs.cache
+F:\Learn\Notes.Shared\obj\Debug\net9.0\Notes.Shared.dll
+F:\Learn\Notes.Shared\obj\Debug\net9.0\refint\Notes.Shared.dll
+F:\Learn\Notes.Shared\obj\Debug\net9.0\Notes.Shared.pdb
+F:\Learn\Notes.Shared\obj\Debug\net9.0\ref\Notes.Shared.dll

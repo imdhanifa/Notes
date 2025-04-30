@@ -1,0 +1,9 @@
+﻿global using MediatR;
+global using Microsoft.EntityFrameworkCore;
+global using Notes.Application.Features.Notes.Commands;
+global using Notes.Application.Features.Notes.Queries;
+global using Notes.Application.Interfaces.Services;
+global using Notes.Infrastructure.DbContexts;
+global using Notes.Infrastructure.Repositories;
+global using Notes.Infrastructure.Services;
+global using Notes.Web.API.Domain.Interfaces;
